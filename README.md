@@ -19,6 +19,8 @@ I now see an approximate 20% hashrate increase with my new xmrig binary! I teste
 ## Usage
 
 Usage is the same as xmrig-v2.6.0-beta1: https://github.com/xmrig/xmrig/tree/v2.6.0-beta1#usage
+```#Please install the XMRig dependencies before running:
+sudo apt-get install git build-essential cmake libuv1-dev libmicrohttpd-dev```
 
 ## Warning
 
