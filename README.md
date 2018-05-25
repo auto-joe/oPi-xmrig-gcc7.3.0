@@ -8,17 +8,13 @@ This miner is a compilation of https://github.com/xmrig/xmrig version 2.6.2, com
 
 The latest version of gcc/g++ available from Armbian repositories is 6.1.0, and you will be hard-pressed to find a third party binary for 7+ at the moment. To solve this, I compiled 7.3.0 from source, directly on an Orange Pi Zero (long process- saving you time here!). Then, after making a slight tweak to the flags.cmake file from the original xmrig repo, I was able to successfully compile xmrig 2.6.2 with gcc-7.3.0:
 
-![init gcc-7.3.0](https://i.imgur.com/CV3gvNU.png)
+![hashrate gcc-7.3.0](https://i.imgur.com/59zg8DK.png)
 
-**SCREENSHOT INNACURATE FOR NOW - FROM MY rPi3b project**
 
 ## Results
 
-I now see an approximate 10% hashrate increase with my new xmrig binary! I am not using heatsinks or overclocks. Mining **Aeon** with the gcc 6.1.0 xmrig binary, I average ~12 H/s. With the new 7.3.0 xmrig binary, I'm averaging ~13.2 H/s!
+I now see an approximate 14% hashrate increase with my new xmrig binary! I am using a heatsink with no overclock. Mining **TRTL**  (cryptonight-lite) with the gcc 6.1.0 xmrig binary, I average ~12 H/s. With the new 7.3.0 xmrig binary, I'm averaging ~13.7 H/s! Not bad for an $8 SBC!
 
-![hashrate gcc-7.3.0](https://i.imgur.com/84csjI4.png)
-
-**SCREENSHOT INNACURATE FOR NOW - FROM MY rPi3b project**
 
 ## Usage
 
@@ -45,4 +41,6 @@ I have not altered, or reduced the default xmrig donations in my compilations, a
 ## Performance notes/known issues
 * Max hashrate stat seems to get stuck shortly after starting - no actual impact
 * I find --av=3 gives best results
-* I suggest using a proxy like xmrig-proxy if you plan to cluster some pi's for mining: https://github.com/xmrig/xmrig-proxy
+* Running on 3/4 cores seems to be the sweetspot for hashrate/thermal throttling of CPU (11.9 h/s)
+* Monitor temperature & frequency with `armbianmonitor -m`
+* I suggest using a proxy like xmrig-proxy if you plan to cluster some pi's or other small devices for mining: https://github.com/xmrig/xmrig-proxy
