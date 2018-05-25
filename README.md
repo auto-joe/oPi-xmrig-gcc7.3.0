@@ -13,13 +13,13 @@ The latest version of gcc/g++ available from Armbian repositories is 6.1.0, and 
 
 ## Results
 
-I now see an approximate 14% hashrate increase with my new xmrig binary! I am using a heatsink with no overclock. Mining **TRTL**  (cryptonight-lite) with the gcc 6.1.0 xmrig binary, I average ~12 H/s. With the new 7.3.0 xmrig binary, I'm averaging ~13.7 H/s! Not bad for an $8 SBC!
+I now see an approximate **14%** hashrate increase with my new xmrig binary! I am using a heatsink with no overclock. Mining **TRTL**  (cryptonight-lite) with the gcc 6.1.0 xmrig binary, I average ~12 H/s. With the new 7.3.0 xmrig binary, I'm averaging **~13.7 H/s**! Not bad for an $8 SBC!
 
 
 ## Usage
 
 Usage is the same as xmrig-v2.6.2: https://github.com/xmrig/xmrig/tree/v2.6.0-beta1#usage
-#Please install the XMRig dependencies before running:
+**Please install the XMRig dependencies before running:**
 `sudo apt-get install git build-essential cmake libuv1-dev libmicrohttpd-dev`
 
 ## Warning
